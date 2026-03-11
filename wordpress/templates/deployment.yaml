@@ -378,12 +378,12 @@ spec:
             - name: empty-dir
               mountPath: /tmp
               subPath: tmp-dir
-            - name: empty-dir
-              mountPath: /opt/bitnami/wordpress
-              subPath: app-base-dir
-            - mountPath: /bitnami/wordpress
-              name: wordpress-data
-              subPath: wordpress
+            # - name: empty-dir
+            #   mountPath: /opt/bitnami/wordpress
+            #   subPath: app-base-dir
+            # - mountPath: /bitnami/wordpress
+            #   name: wordpress-data
+            #   subPath: wordpress
             {{- if  .Values.usePasswordFiles }}
             - name: wordpress-secrets
               mountPath: /secrets
