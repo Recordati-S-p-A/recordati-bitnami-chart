@@ -129,13 +129,13 @@ spec:
             - |
               #!/bin/bash
 
-              #. /opt/bitnami/scripts/liblog.sh
-              #. /opt/bitnami/scripts/libfs.sh
+              . /opt/bitnami/scripts/liblog.sh
+              . /opt/bitnami/scripts/libfs.sh
 
               info "Copying base dir to empty dir"
               # In order to not break the application functionality (such as upgrades or plugins) we need
               # to make the base directory writable, so we need to copy it to an empty dir volume
-              #cp -r --preserve=mode /opt/bitnami/wordpress /emptydir/app-base-dir
+              cp -r --preserve=mode /opt/bitnami/wordpress /emptydir/app-base-dir
 
               info "Copying symlinks to stdout/stderr"
               # We copy the logs folder because it has symlinks to stdout and stderr
