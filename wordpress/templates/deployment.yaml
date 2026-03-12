@@ -302,9 +302,9 @@ spec:
             - name: empty-dir
               mountPath: /opt/bitnami/apache/conf
               subPath: apache-conf-dir
-            - name: empty-dir
-              mountPath: /opt/bitnami/apache/logs
-              subPath: apache-logs-dir
+            # - name: empty-dir
+            #   mountPath: /opt/bitnami/apache/logs
+            #   subPath: apache-logs-dir
             - name: empty-dir
               mountPath: /opt/bitnami/apache/var/run
               subPath: apache-tmp-dir
