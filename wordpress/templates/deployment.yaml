@@ -309,8 +309,6 @@ spec:
               mountPath: /opt/bitnami/apache/var/run
               subPath: apache-tmp-dir
             - name: empty-dir
-              mountPath: /opt/bitnami/php/etc
-              subPath: php-conf-dir
             - name: empty-dir
               mountPath: /opt/bitnami/php/tmp
               subPath: php-tmp-dir
